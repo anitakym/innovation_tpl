@@ -1,0 +1,89 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+  }
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #99a9bf;
+    border-radius: 20px;
+  }
+}
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+// 上下左右居中
+@mixin middle-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// 字体规格
+@mixin font-bold {
+  font-family: PingFangSC-Medium, PingFang SC, Microsoft YaHei, Arial,
+    sans-serif;
+  font-weight: 600;
+}
+
+@mixin font-regular {
+  font-family: PingFangSC-Regular, PingFang SC, Microsoft YaHei, Arial,
+    sans-serif;
+  font-weight: 400;
+}
+
+$ucan-resource-path: "/";
+
+@mixin resource-bgc($name, $type: "img") {
+  background-image: url($ucan-resource-path+$type+"/"+$name);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@mixin resource-bgc-image($name, $type: "img") {
+  background-image: url($ucan-resource-path+$type+"/"+$name);
+}
+
+// 题目序号样式
+@mixin question-number {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 1;
+  padding-left: 6px;
+  overflow: hidden;
+  margin-right: 8px;
+}
+@mixin question-number__after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  z-index: -1;
+  height: 4px;
+  width: 100%;
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#fde100),
+    to(#fabf00)
+  );
+  background: linear-gradient(270deg, #fde100 0%, #fabf00 100%);
+  transform: skewX(-45deg);
+}

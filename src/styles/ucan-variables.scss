@@ -1,0 +1,52 @@
+/*
+ * 此部分为对原来手动覆盖的颜色的抽取，如原先代码中用到了，尽量去除，
+ * 用$ucan-color-brand ，如果有针对主题色的透明度和混合变出来的颜色
+ */
+$ucan-theme-color: red;
+$ucan-theme-color-light: red; // 将原来的这个颜色抽取 #5E81FF
+$ucan-theme-color-lighter: red; // #edf0ff
+
+// 此部分为规范中的颜色，已注入到组件之中，可直接引用
+
+/* color */
+$ucan-color-brand: #3aba96;
+
+$ucan-color-gray1: #333333;
+$ucan-color-gray2: #666666;
+$ucan-color-gray3: #999999;
+$ucan-color-gray4: #c6c6c6;
+$ucan-color-gray5: #e0e0e0;
+$ucan-color-gray6: #eeeeee;
+$ucan-color-gray7: #f5f5f5;
+$ucan-color-gray8: #fafafa;
+$ucan-color-secondary1: #ecfaf7;
+
+// 此部分应用场景大部分包含在element组件使用之中，可用element
+$ucan-color-success: #5abb3c;
+$ucan-color-warning: #ff9801;
+$ucan-color-danger: #ff5046;
+$ucan-color-info: #3aba96;
+
+$ucan-color-success-light: #ecfaf7;
+$ucan-color-warning-light: #ffeddd;
+$ucan-color-danger-light: #ffe2e2;
+$ucan-color-info-light: #eefff2;
+// $ucan-color-warning-light: #FF9801;
+// $ucan-color-danger-light: #FFE2E2;
+// $ucan-color-info-light: #3ABA96;
+
+/* font */
+$ucan-font-size-extra-huge-large: 30px;
+$ucan-font-size-extra-large: 22px;
+$ucan-font-size-large: 18px;
+$ucan-font-size-medium: 16px;
+$ucan-font-size-base: 14px;
+$ucan-font-size-extra-small: 12px;
+
+$ucan-font-weight-semibold: 600;
+$ucan-font-weight-medium: 500;
+$ucan-font-weight-regular: 400;
+
+/* 临时颜色抽取，对于UI不放入规范的部分，此处标注用处 */
+
+$ucan-color-with-alpha: rgba(0, 0, 0, 0.16); // 边框阴影
