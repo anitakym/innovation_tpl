@@ -53,7 +53,7 @@ export const constantRoutes = [
     }]
   },
 
-  {
+  /* {
     path: '/example',
     component: Layout,
     redirect: '/example/table',
@@ -73,7 +73,7 @@ export const constantRoutes = [
         meta: { title: 'Tree', icon: 'tree' }
       }
     ]
-  },
+  }, */
 
   {
     path: '/form',
@@ -88,7 +88,7 @@ export const constantRoutes = [
     ]
   },
 
-  {
+  /* {
     path: '/nested',
     component: Layout,
     redirect: '/nested/menu1',
@@ -145,7 +145,7 @@ export const constantRoutes = [
         meta: { title: 'menu2' }
       }
     ]
-  },
+  }, */
 
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
