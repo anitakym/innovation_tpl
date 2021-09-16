@@ -554,7 +554,7 @@
                           spellcheck="false"
                           contenteditable="true"
                           class="abc-input__inner abc-edit-div"
-                        >
+                        >{{contentA}}
                         </div>
                         <input
                           type="text"
@@ -566,72 +566,73 @@
                             left: 0px;
                             width: 0px;
                           "
+                          v-model="contentA"
                         >
                         <!---->
                       </div>
-                          <div class="medical-record-suggestions-wrapper" style="top: 40px; width:626px" v-show="popoverVisible"><div class="symptom-list"><ul><li><div>
+                          <div class="medical-record-suggestions-wrapper" style="top: 40px; width:626px" v-show="popoverVisible"><div class="symptom-list"><ul><li><div @click="addInput">
                         咳嗽
-                    </div><div>
+                    </div><div @click="addInput">
                         干咳
-                    </div><div>
+                    </div><div @click="addInput">
                         咳痰
-                    </div><div>
+                    </div><div @click="addInput">
                         夜咳
-                    </div><div>
+                    </div><div @click="addInput">
                         咽干
-                    </div><div>
+                    </div><div @click="addInput">
                         咽痒
-                    </div><div>
+                    </div><div @click="addInput">
                         咽痛
-                    </div><div>
+                    </div><div @click="addInput">
                         咽部异物感
-                    </div><div>
+                    </div><div @click="addInput">
                         反复感冒
-                    </div></li> <li><div>
+                    </div></li> <li><div @click="addInput">
                         发热
-                    </div><div>
+                    </div><div @click="addInput">
                         喷嚏
-                    </div><div>
+                    </div><div @click="addInput">
                         流涕
-                    </div><div>
+                    </div><div @click="addInput">
                         鼻塞
-                    </div><div>
+                    </div><div @click="addInput">
                         头痛
-                    </div><div>
+                    </div><div @click="addInput">
                         头晕
-                    </div><div>
+                    </div><div @click="addInput">
                         耳鸣
-                    </div><div>
+                    </div><div @click="addInput">
                         多汗
-                    </div><div>
+                    </div><div @click="addInput">
                         少汗
-                    </div><div>
+                    </div><div @click="addInput">
                         盗汗
-                    </div><div>
+                    </div><div @click="addInput">
                         自汗
-                    </div></li></ul> <div class="cut-line"></div> <ul><li><div>
+                    </div></li></ul> <div class="cut-line"></div> <ul><li><div @click="addInput">
                         胃胀
-                    </div><div>
+                    </div><div @click="addInput">
                         胃痛
-                    </div><div>
+                    </div><div @click="addInput">
                         腹胀
-                    </div><div>
+                    </div><div @click="addInput">
                         腹痛
-                    </div><div>
+                    </div><div @click="addInput">
                         腹泻
-                    </div><div>
+                    </div><div @click="addInput">
                         恶心
-                    </div><div>
+                    </div><div @click="addInput">
                         呕吐
-                    </div><div>
+                    </div><div @click="addInput">
                         冒酸
-                    </div><div>
+                    </div><div @click="addInput">
                         嗳气
-                    </div><div>
+                    </div><div @click="addInput">
                         纳差
-                    </div><div>
+                    </div><div @click="addInput">
                         吞咽困难
-                    </div></li> <li><div>
+                    </div></li> <li><div @click="addInput">
                         便秘
                     </div><div>
                         便溏
@@ -1524,7 +1525,8 @@ export default {
         label: '描述C'
       }],
       value: [],
-      popoverVisible: false
+      popoverVisible: false,
+      contentA: '咳嗽,'
     }
   },
   methods: {
@@ -1533,6 +1535,9 @@ export default {
     },
     ctrlShow() {
       this.popoverVisible = !this.popoverVisible
+    },
+    addInput() {
+      this.contentA = this.contentA + '加一个,'
     }
   }
 
