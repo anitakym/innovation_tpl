@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard-container">
-    <div class="dashboard-text">name: {{ name }}</div>
+    <div class="dashboard-text">仅供展示demo使用</div>
     <img :src="$resource('desktop_list_book.svg','svg')" alt="">
   </div>
 </template>
