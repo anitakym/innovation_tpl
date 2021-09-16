@@ -570,23 +570,23 @@
                         >
                         <!---->
                       </div>
-                          <div class="medical-record-suggestions-wrapper" style="top: 40px; width:626px" v-show="popoverVisible"><div class="symptom-list"><ul><li><div @click="addInput">
+                          <div class="medical-record-suggestions-wrapper" style="top: 40px; width:626px" v-show="popoverVisible"><div class="symptom-list"><ul><li><div v-on:click="contentA += '咳嗽,'">
                         咳嗽
-                    </div><div @click="addInput">
+                    </div><div v-on:click="contentA += '干咳,'">
                         干咳
-                    </div><div @click="addInput">
+                    </div><div v-on:click="contentA += '咳痰,'">
                         咳痰
-                    </div><div @click="addInput">
+                    </div><div v-on:click="contentA += '夜咳,'">
                         夜咳
-                    </div><div @click="addInput">
+                    </div><div v-on:click="contentA += '咽干,'">
                         咽干
-                    </div><div @click="addInput">
+                    </div><div v-on:click="contentA += '咽痒,'">
                         咽痒
-                    </div><div @click="addInput">
+                    </div><div v-on:click="contentA += '咽痛,'">
                         咽痛
-                    </div><div @click="addInput">
+                    </div><div v-on:click="contentA += '咽部异物感,'">
                         咽部异物感
-                    </div><div @click="addInput">
+                    </div><div v-on:click="contentA += '反复感冒,'">
                         反复感冒
                     </div></li> <li><div @click="addInput">
                         发热
@@ -1526,7 +1526,8 @@ export default {
       }],
       value: [],
       popoverVisible: false,
-      contentA: '咳嗽,'
+      contentA: '',
+      ele: ''
     }
   },
   methods: {
@@ -1536,8 +1537,12 @@ export default {
     ctrlShow() {
       this.popoverVisible = !this.popoverVisible
     },
-    addInput() {
-      this.contentA = this.contentA + '加一个,'
+    addInput(ele) {
+      if (!this.ele) {
+        this.contentA = this.contentA + this.ele + ','
+      } else {
+        this.contentA = this.contentA + '加一个,'
+      }
     }
   }
 
