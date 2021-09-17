@@ -8,6 +8,7 @@ import ElementUI from 'element-ui'
 import '@/styles/element-variables.scss'
 import '@/styles/index.scss' // global css
 import '@/styles/abctest.css'
+import '@/styles/font_abc.css'
 
 import App from './App'
 import store from './store'

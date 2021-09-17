@@ -2,136 +2,34 @@
   <div class="app-container">
     <div class="content-container outpatient-container" style="width:776px">
       <div>
+        <div class="top-head-wrapper" style="top: 58px; width: 774px;"><div class="outpatient-form-tab-wrapper"><div class="abc-tabs"><div class="abc-tabs-item abc-tabs-item-active"><!----> <!---->
+
+        门诊
+
+        <!----> <!----> <!----></div><div class="abc-tabs-item"><!----> <!---->
+
+        慢病管理
+
+        <!----> <!----> <!----></div> <div class="abc-tabs-active-bar" style="transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; transform: translateX(0px); width: 32px;"></div></div></div> <div class="outpatient-record-count">
+            
+        </div> <div class="buttons-wrapper"><!----> <button disabled="disabled" class="abc-button abc-button-blank abc-button-normal is-disabled"><!----> 
+                    费用预览
+                </button> <!----> <button class="abc-button abc-button-primary abc-button-normal"><!----> 
+                        完成接诊
+                    </button> <button class="abc-button abc-button-blank abc-button-normal"><!----> 
+                        删除
+                    </button> <!----> <!----> <!----> <!----></div></div>
         <div class="main-content">
           <div class="abc-form">
-            <div class="outpatient-patient-form">
-              <div class="patient-form">
-                <div class="abc-form-item is-required">
-                  <!---->
-                  <div class="abc-form-item-content">
-                    <!---->
-                    <div
-                      class="abc-input-wrapper abc-autocomplete-wrapper"
-                      style="width: 116px"
-                    >
-                      <!---->
-                      <input
-                        autocomplete="off"
-                        spellcheck="false"
-                        type="text"
-                        maxlength="20"
-                        placeholder="姓名"
-                        class="abc-input__inner"
-                      >
-                      <div
-                        class="suggestions-wrapper patient-suggestion"
-                        style="width: 511px; display: none"
-                      >
-                        <div class="suggestion-title">
-                          <div class="patient-info">患者信息</div>
-                          <div class="mr-info">上次就诊</div>
-                        </div>
-                        <div class="abc-scrollbar-wrapper"><dl /></div>
-                        <div />
-                      </div>
-                      <!---->
-                      <!---->
-                      <div style="display: none">
-                        <div class="clear-btn">
-                          <i
-                            class="icon iconfont cis-icon-close_popup_grey_hov"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="abc-form-item patient-age-year is-required">
-                  <!---->
-                  <div class="abc-form-item-content">
-                    <!---->
-                    <div class="abc-input-wrapper abc-input-append">
-                      <!---->
-                      <input
-                        type="text"
-                        autocomplete="off"
-                        spellcheck="false"
-                        maxlength="500"
-                        class="abc-input__inner"
-                        style="
-                          width: 36px;
-                          padding: 3px 6px;
-                          text-align: center;
-                        "
-                      >
-                      <div class="append-input"><span>岁</span></div>
-                      <!---->
-                      <!---->
-                      <!---->
-                    </div>
-                  </div>
-                </div>
-                <div class="abc-form-item patient-age-month is-required">
-                  <!---->
-                  <div class="abc-form-item-content">
-                    <!---->
-                    <div class="abc-input-wrapper abc-input-append">
-                      <!---->
-                      <input
-                        type="text"
-                        autocomplete="off"
-                        spellcheck="false"
-                        maxlength="500"
-                        class="abc-input__inner"
-                        style="width: 36px; text-align: center"
-                      >
-                      <div class="append-input"><span>月</span></div>
-                      <!---->
-                      <!---->
-                      <!---->
-                    </div>
-                  </div>
-                </div>
-                <!---->
-                <div class="abc-form-item">
-                  <!---->
-                  <div class="abc-form-item-content">
-                    <!---->
-                    <div
-                      class="
-                        abc-input-wrapper abc-autocomplete-wrapper
-                        mobile-autocomplete
-                      "
-                      style="width: 106px"
-                    >
-                      <!---->
-                      <input
-                        autocomplete="off"
-                        spellcheck="false"
-                        type="text"
-                        maxlength="11"
-                        placeholder="手机号"
-                        class="abc-input__inner"
-                      >
-                      <div
-                        class="suggestions-wrapper patient-suggestion"
-                        style="width: 479px; display: none"
-                      >
-                        <div class="suggestion-title">
-                          <div class="patient-info">患者信息</div>
-                          <div class="mr-info">上次就诊</div>
-                        </div>
-                        <div class="abc-scrollbar-wrapper"><dl /></div>
-                        <div />
-                      </div>
-                      <!---->
-                      <!---->
-                    </div>
-                  </div>
-                </div>
-                <!---->
-              </div>
-            </div>
+            <div class="outpatient-patient-form" style="display: flex"><div class="patient-form" style="display:flex"><div class="abc-form-item is-required"><!----> <div class="abc-form-item-content"><!----> <div class="abc-input-wrapper abc-autocomplete-wrapper" style="width: 116px;"><!----> <input autocomplete="off" spellcheck="false" type="text" maxlength="20" placeholder="姓名" class="abc-input__inner"> <div class="suggestions-wrapper patient-suggestion" style="width: 511px; display: none;"><div class="suggestion-title"><div class="patient-info">
+                            患者信息
+                        </div> <div class="mr-info">
+                            上次就诊
+                        </div></div> <div class="abc-scrollbar-wrapper"><dl>     </dl></div> <div></div></div> <!----> <!----> <div style="display: none;"><div class="clear-btn"><i class="icon iconfont cis-icon-close_popup_grey_hov"></i></div></div></div></div></div> <div class="abc-form-item is-required"><!----> <div class="abc-form-item-content"><!----> <div class="abc-select-wrapper" select-type="sex" style="width: 48px;"><input type="text" readonly="readonly" class="abc-input__inner" style="padding-left: 8px;">  <i class="iconfont cis-icon-dropdown_triangle"></i> <!----> <div class="options-wrapper" style="width: 50px; display: none;"><div class="option-item-wrapper"> <ul><!----> <li class="abc-option-item is-selected is-hover"><span>男</span></li> <li class="abc-option-item"><span>女</span></li></ul></div></div></div></div></div> <div class="abc-form-item patient-age-year is-required"><!----> <div class="abc-form-item-content"><!----> <div class="abc-input-wrapper abc-input-append"><!----> <input type="text" autocomplete="off" spellcheck="false" maxlength="500" class="abc-input__inner" style="width: 36px; padding: 3px 6px; text-align: center;"> <div class="append-input"><span>岁</span></div> <!----> <!----> <!----></div></div></div> <div class="abc-form-item patient-age-month is-required"><!----> <div class="abc-form-item-content"><!----> <div class="abc-input-wrapper abc-input-append"><!----> <input type="text" autocomplete="off" spellcheck="false" maxlength="500" class="abc-input__inner" style="width: 36px; text-align: center;"> <div class="append-input"><span>月</span></div> <!----> <!----> <!----></div></div></div> <!----> <div class="abc-form-item"><!----> <div class="abc-form-item-content"><!----> <div class="abc-input-wrapper abc-autocomplete-wrapper mobile-autocomplete" style="width: 106px;"><!----> <input autocomplete="off" spellcheck="false" type="text" maxlength="11" placeholder="手机号" class="abc-input__inner"> <div class="suggestions-wrapper patient-suggestion" style="width: 479px; display: none;"><div class="suggestion-title"><div class="patient-info">
+                            患者信息
+                        </div> <div class="mr-info">
+                            上次就诊
+                        </div></div> <div class="abc-scrollbar-wrapper"><dl>     </dl></div> <div></div></div> <!----> <!----> </div></div></div> <!----></div> <div class="reg-form" style="display:flex; padding-left:63px"><div class="abc-form-item is-required"><!----> <div class="abc-form-item-content"><!----> <div class="abc-select-wrapper" style="width: 140px;"><input type="text" readonly="readonly" placeholder="" class="abc-input__inner">  <i class="iconfont cis-icon-dropdown_triangle"></i> <!----> <div class="options-wrapper" style="width: 142px; display: none;"><div class="option-item-wrapper"> <ul><!----> <li class="abc-option-item is-selected is-hover"><span>张涵</span></li> <!----> </ul></div></div></div></div></div> <div class="abc-form-item" style="margin-right: 0px;"><!----> <div class="abc-form-item-content"><!----> <div class="abc-input-wrapper abc-input-prepend"><div class="prepend-input"><label class="prepend" style="width: 24px; font-size: 14px; text-align: center;"><i class="icon iconfont cis-icon-renminbi"></i></label></div> <input type="text" autocomplete="off" spellcheck="false" maxlength="500" placeholder="诊费" class="abc-input__inner" style="text-align: left; width: 70px; padding: 0px 3px 0px 24px;"> <!----> <!----> <!----> <!----></div></div></div></div></div>
             <!---->
             <div class="outpatient-form-item">
               <div class="title" style="padding-right: 7px">
